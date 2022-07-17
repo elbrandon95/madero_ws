@@ -28,6 +28,12 @@ return new class extends Migration
             $table->float('do_latitude');
             $table->float('do_longitude');
             $table->string('do_address');
+            $table->float('rate');
+            $table->string('zone');
+            $table->integer('users_number');
+            $table->integer('baggage_number');
+            $table->string('organization');
+            $table->float('distance');
             $table->timestamps();
         });
     }
